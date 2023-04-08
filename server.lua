@@ -155,7 +155,6 @@ function LoadPlayerAvatars()
                   local identifier = result[i].identifier
                   local avatar = result[i].avatar
                   player_avatars[identifier] = avatar
-                  print(json.encode(player_avatars))
             end
       else
             local data = LoadResourceFile(GetCurrentResourceName(), "./database/player_avatars.json")

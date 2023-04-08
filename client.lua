@@ -67,7 +67,7 @@ end)
 
 RegisterNUICallback("GetAvatarHistory", function(data, cb)
       local history = lib.callback.await('LuxuAvatar:Server:GetAvatarHistory', false)
-      print(json.encode(history))
+
       cb(history)
 end)
 
