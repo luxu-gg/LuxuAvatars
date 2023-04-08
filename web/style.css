@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bg1: #2a2a2a;
+}
+
+html {
+  font-size: calc(16 / 19.2 * 1vw);
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  html {
+    font-size: calc(16 / 10.8 * 1vh);
+  }
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: transparent;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#app {
+  width: 35rem;
+  height: 30rem;
+  background: radial-gradient(100% 100% at 50% 0%, #2c2c2c 0%, #171717 100%);
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.profile_avatar {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  overflow: visible;
+  user-select: none;
+}
+figcaption {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#avatar {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.history-btn {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.history-btn * {
+  pointer-events: none;
+}
+
+#Layer_1 {
+  fill: white;
+  filter: brightness(80%);
+  transition: all 0.2s ease;
+}
+
+.history-btn:hover #Layer_1 {
+  filter: brightness(100%);
+}
+
+.updateimg-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.updateimg-form input {
+  width: 60%;
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background: var(--bg1);
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.updateimg-actions {
+  display: flex;
+  width: 60%;
+  gap: 0.5rem;
+}
+
+.updateimg-form button {
+  flex-grow: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+
+  transition: all 0.2s ease;
+  filter: brightness(90%);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.updateimg-form button:hover {
+  filter: brightness(100%);
+}
+
+.updateimg-form button:active {
+  transform: scale(0.95);
+}
+
+.avatar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0.5rem;
+  border-radius: 20px;
+  background: rgba(17, 17, 17, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.avatar-list .avatar-info {
+  width: 48%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  place-items: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.avatar-list .avatar-info img {
+  grid-column: span 2 / span 2;
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 0.5rem;
+}
+.avatar-list .avatar-info button {
+  padding: 0.25rem;
+  width: 90%;
+  border-radius: 5px;
+
+  filter: brightness(90%);
+  transition: all 0.2s ease;
+}
+.avatar-info button:hover {
+  filter: brightness(100%);
+}
+.avatar-list .avatar-info button:active {
+  transform: scale(0.95);
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(37 99 235);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: rgb(37, 102, 242);
+}
