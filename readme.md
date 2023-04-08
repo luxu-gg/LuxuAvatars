@@ -1,5 +1,7 @@
 # Luxu Avatars
 
+[Preview](https://www.youtube.com/watch?v=aFrsELRVuJA)
+
 ## What is this 🤔?
 
 This FiveM resource enables developers to consolidate all player avatars in one central location.
