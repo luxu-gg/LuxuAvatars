@@ -23,26 +23,32 @@ Consider contributing with code on github.
 
 - [ox_lib](https://github.com/overextended/ox_lib/releases/)
 
+## [Installation]
+
+- Create a folder named `LuxuAvatars`
+- Place everything inside
+- Copy `LuxuAvatars` to your resources folder.
+
 ## [Exports]
 
 Client
 
 ```lua
 -- Get Player Avatar | returns string or nil
-exports.LuxuAvatar:GetCurrentPlayerAvatar()
+exports.LuxuAvatars:GetCurrentPlayerAvatar()
 -- Get All Players Avatars | returns table or nil
-exports.LuxuAvatar:GetAllPlayersAvatars()
+exports.LuxuAvatars:GetAllPlayersAvatars()
 ```
 
 Server
 
 ```lua
 -- Get Player Avatar | returns string or nil
-exports.LuxuAvatar:GetPlayerAvatar(playerSRC)
+exports.LuxuAvatars:GetPlayerAvatar(playerSRC)
 -- Get All Players Avatars | returns table or nil
-exports.LuxuAvatarGetAllPlayersAvatars()
+exports.LuxuAvatars:GetAllPlayersAvatars()
 -- Update Player Avatar
-exports.LuxuAvatar:UpdatePlayerAvatar(playerSRC,avatar)
+exports.LuxuAvatars:UpdatePlayerAvatar(playerSRC,avatar)
 ```
 
 ## [Config]
